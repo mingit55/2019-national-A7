@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* HEADER - NAV */
+
+nav {
+    display: flex;
+}
+
+nav .nav-item {
+    position: relative;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .sub {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding-top: 20px; 
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav .sub a {
+    height: 40px;
+    line-height: 40px;
+    padding-right: 20px;
+    text-align: right;
+    color: #555;
+}
+
+nav a { color: #222; }
+nav a:hover { color: #C92039; }
+
+/* /HEADER - NAV */

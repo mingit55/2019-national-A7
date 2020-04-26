@@ -21,7 +21,14 @@ body { background-color: #f8f8f8; }
 .box-shadow { box-shadow: 0 1px 3px 1px #0002; }
 .text-shadow { text-shadow: 0 1px 3px #000; }
 
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
 .overflow-hidden { overflow: hidden; }
+
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
 
 .pointer { cursor: pointer; }
 

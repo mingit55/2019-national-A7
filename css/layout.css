@@ -1,9 +1,18 @@
 @charset "UTF-8";
 
-/* HEADER - NAV */
+/* HEADER */
+header {
+    box-shadow: 0 1px 3px 1px #0001;
+    background-color: #fff;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 nav {
     display: flex;
+    height: 100%;
 }
 
 nav .nav-item {
@@ -18,22 +27,82 @@ nav .nav-item {
 nav .sub {
     position: absolute;
     top: 100%;
-    right: 0;
-    padding-top: 20px; 
+    left: 0;
+    margin-top: -10px;
     width: 180px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 1px 3px 1px #0001;
+    transform: translateX(-50px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
 }
 
 nav .sub a {
-    height: 40px;
-    line-height: 40px;
-    padding-right: 20px;
-    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
     color: #555;
+    background-color: #fff;
+    border-left: #C92039 5px solid;
+    transition: padding-left 0.4s;
 }
+nav .sub a:hover { padding-left: 25px; background-color: #fafafa; }
 
 nav a { color: #222; }
-nav a:hover { color: #C92039; }
+nav .nav-item:hover > a { color: #C92039; }
+nav .nav-item:hover > .sub {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.4s;
+}
 
-/* /HEADER - NAV */
+/* /HEADER */
+
+
+/* VISUAL */
+.visual {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    margin-top: 80px;
+}
+
+.images::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    background-color: #0006;
+    width: 100%; height: 100%;
+}
+
+.visual img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slide 15s infinite;
+}
+
+.visual img:nth-child(1) { animation-delay: -5s; }
+.visual img:nth-child(3) { animation-delay: -10s; }
+
+@keyframes slide {
+    0%       { opacity: 0; transform: translateY(-100%); }
+    20%      { opacity: 0; transform: translateY(-100%); }
+    33.333%  { opacity: 1; transform: translateY(0); }
+    53.333%  { opacity: 1; transform: translateY(0); }
+    66.666%  { opacity: 0; transform: translateY(100%); }
+    100%     { opacity: 0; transform: translateY(100%); }
+}
+
+.visual .texts {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}

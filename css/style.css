@@ -22,6 +22,10 @@ img { pointer-events: none; }
 
 
 /* e.t.c */
+.float-left { float: left; }
+.float-right { float: right; }
+.clear-both { clear: both; }
+
 .padding { padding-top: 120px; padding-bottom: 120px; }
 
 .white-space-normal { white-space: normal; }
@@ -88,6 +92,8 @@ img { pointer-events: none; }
 .align-self-center { align-self: center; }
 .align-self-end { align-self: flex-end; }
 
+.flex-center { display: flex; justify-content: center; align-items: center; }
+
 /* border */
 .border { border: 1px solid; }
 .border-circle { border-radius: 50%; }
@@ -104,6 +110,7 @@ img { pointer-events: none; }
 .bg-muted { background-color: #999; }
 .bg-red { background-color: #C92039; }
 .bg-light { background-color: #f1f1f1 }
+.bg-yellow { background-color: #EFB33A; }
 
 /* textColor */
 .text-white { color: #fff; }
@@ -112,14 +119,16 @@ img { pointer-events: none; }
 .text-pale-black { color: #555; }
 .text-muted { color: #999; }
 .text-red { color: #C92039; }
+.text-yellow { color: #EFB33A; }
 
 /* borderColor */
 .border-white { border-color: #fff; }
 .border-black { border-color: #333; }
-.border-pale-white { border-color: #ccc; }
+.border-pale-white { border-color: #ddd; }
 .border-pale-black { border-color: #555; }
 .border-muted { border-color: #999; }
 .border-red { border-color: #C92039; }
+.border-yellow { border-color: #EFB33A; }
 
 
 @media screen and (max-width: 992px){
@@ -182,6 +191,7 @@ img { pointer-events: none; }
     .bg-sm-muted { background-color: #999; }
     .bg-sm-red { background-color: #C92039; }
     .bg-sm-light { background-color: #f1f1f1 }
+    .bg-sm-yellow { background-color: #EFB33A; }
 
     /* textColor */
     .text-sm-white { color: #fff; }
@@ -190,6 +200,7 @@ img { pointer-events: none; }
     .text-sm-pale-black { color: #555; }
     .text-sm-muted { color: #999; }
     .text-sm-red { color: #C92039; }
+    .text-sm-yellow { color: #EFB33A; }
 
     /* borderColor */
     .border-sm-white { border-color: #fff; }
@@ -198,4 +209,5 @@ img { pointer-events: none; }
     .border-sm-pale-black { border-color: #555; }
     .border-sm-muted { border-color: #999; }
     .border-sm-red { border-color: #C92039; }
+    .border-sm-yellow { border-color: #EFB33A; }
 }

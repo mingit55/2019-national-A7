@@ -233,6 +233,8 @@ nav .nav-item:hover > .sub {
     margin-top: 80px;
 }
 
+.visual.sub { height: 350px; }
+
 .images::after {
     content: '';
     position: absolute;
